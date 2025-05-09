@@ -1,19 +1,58 @@
-# Budget Calculator 💸
+# 💸 Budget Calculator – Gen Alpha Edition
 
-A simple web app to track monthly income and expenses. Built with HTML, CSS, JS, and Chart.js.
+A fun, colorful, and easy-to-use budget calculator built for Gen Alpha and beginner coders alike.
 
-## 🔗 Live Demo
-[Click here to try it](https://rjnice22.github.io/budget-calculator/)
+---
 
-## Features
-- Enter income and expenses
-- Auto-calculate total expenses and remaining balance
-- Pie chart visualization with Chart.js
+## 🚀 Live Demo
 
-## Screenshot
+👉 [Click here to use the app](https://rjnice22.github.io/budget-calculator/)
+
+---
+
+## 📘 Project Overview
+
+This project lets you:
+
+- Input monthly income and expenses 🧾
+- Automatically calculate total expenses and remaining balance 💡
+- Visualize your spending with a live pie chart 📊
+- Experience a playful, Gen Alpha–friendly user interface 🎨
+
+---
+
+## 🔄 Versions
+
+| Version | Features |
+|---------|----------|
+| **v1.0** | Basic calculator with HTML/CSS/JS and Chart.js pie chart |
+| **v2.0** | Gen Alpha UI: emojis, modern font, responsive layout, bright colors |
+
+---
+
+## 📸 Screenshot
+
+![image](https://github.com/user-attachments/assets/4a70bcea-8226-491c-83cc-33151dbf6992)
 
 
-## How to Use
-1. Clone the repo or open the live demo
-2. Enter your budget info
-3. Hit "Calculate" to see results and chart!
+## 🛠️ Built With
+
+- HTML5
+- CSS3
+- JavaScript
+- [Chart.js](https://www.chartjs.org/)
+- Google Fonts (Fredoka)
+
+---
+> ⚠️ Disclaimer: This project is for educational purposes only. No user data is stored, collected, or transmitted to any server. All data remains in the user’s local browser.
+
+## 📚 How to Use Locally
+
+```bash
+# Clone the repo
+git clone https://github.com/rjnice22/budget-calculator.git
+
+# Open the project folder
+cd budget-calculator
+
+# Open index.html in your browser
