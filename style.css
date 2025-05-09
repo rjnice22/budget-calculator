@@ -1,54 +1,89 @@
+/* ───────────────────────────────────────────────────────── */
+/*           Gen-Alpha Facelift: Pastel + Playful           */
+/* ───────────────────────────────────────────────────────── */
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap');
+
+:root {
+  --clr-bg-start: #ffe6f2;
+  --clr-bg-end:   #e6f2ff;
+  --clr-card:     rgba(255, 255, 255, 0.85);
+  --clr-primary:  #ff6a9e;  /* pink */
+  --clr-secondary:#6a9eff;  /* blue */
+  --clr-accent:   #ffb366;  /* orange */
+  --clr-text:     #2a2a2a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
+  padding: 0 20px;
+  min-height: 100vh;
   font-family: 'Fredoka', sans-serif;
-  background: #fef6e4;
-  padding: 20px;
-  color: #172c66;
+  background: linear-gradient(135deg, var(--clr-bg-start), var(--clr-bg-end));
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin: 40px 0 20px;
+  background: linear-gradient(45deg, var(--clr-primary), var(--clr-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-align: center;
 }
 
 .container {
-  max-width: 400px;
-  margin: auto;
-  background: #ffffff;
-  padding: 20px;
-  border-radius: 20px;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  padding: 30px;
+  background: var(--clr-card);
+  border-radius: 25px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 label {
   display: block;
   margin-bottom: 15px;
-  text-align: left;
   font-size: 1.1rem;
+  color: var(--clr-text);
 }
 
 input {
   width: 100%;
-  padding: 10px;
-  border: 2px solid #d3d3d3;
-  border-radius: 8px;
+  padding: 12px 15px;
   font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 12px;
   margin-top: 5px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+  border-color: var(--clr-accent);
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(255,179,102,0.3);
 }
 
 button {
   margin-top: 10px;
-  padding: 10px 20px;
+  margin-right: 10px;
+  padding: 12px 25px;
   font-size: 1.1rem;
-  background-color: #ff8906;
+  font-weight: 700;
+  background: linear-gradient(45deg, var(--clr-primary), var(--clr-secondary));
   color: white;
   border: none;
-  border-radius: 10px;
+  border-radius: 12px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-button:hover {
-  background-color: #f25f4c;
-}
-
-#results {
-  margin-top: 20px;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
+button#reset-btn {
+  background: #cccccc;
+  background:
