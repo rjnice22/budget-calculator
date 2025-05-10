@@ -1,29 +1,89 @@
+/* ───────────────────────────────────────────────────────── */
+/*           Gen-Alpha Facelift: Pastel + Playful           */
+/* ───────────────────────────────────────────────────────── */
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap');
+
+:root {
+  --clr-bg-start: #ffe6f2;
+  --clr-bg-end:   #e6f2ff;
+  --clr-card:     rgba(255, 255, 255, 0.85);
+  --clr-primary:  #ff6a9e;  /* pink */
+  --clr-secondary:#6a9eff;  /* blue */
+  --clr-accent:   #ffb366;  /* orange */
+  --clr-text:     #2a2a2a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
-  padding: 20px;
-  color: #333;
+  margin: 0;
+  padding: 0 20px;
+  min-height: 100vh;
+  font-family: 'Fredoka', sans-serif;
+  background: linear-gradient(135deg, var(--clr-bg-start), var(--clr-bg-end));
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
+
+h1 {
+  font-size: 2.8rem;
+  margin: 40px 0 20px;
+  background: linear-gradient(45deg, var(--clr-primary), var(--clr-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
 .container {
-  max-width: 400px;
-  margin: auto;
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 10px #ccc;
+  width: 100%;
+  max-width: 450px;
+  padding: 30px;
+  background: var(--clr-card);
+  border-radius: 25px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
+
+label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: var(--clr-text);
+}
+
 input {
-  margin-bottom: 10px;
-  width: 100px;
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  margin-top: 5px;
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
+
+input:focus {
+  border-color: var(--clr-accent);
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(255,179,102,0.3);
+}
+
 button {
-  padding: 10px 20px;
-  background: green;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  background: linear-gradient(45deg, var(--clr-primary), var(--clr-secondary));
   color: white;
   border: none;
+  border-radius: 12px;
   cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
-#results {
-  margin-top: 20px;
-  font-weight: bold;
-}
+
+button#reset-btn {
+  background: #cccccc;
+  background:

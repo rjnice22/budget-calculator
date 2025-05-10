@@ -3,32 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <title>Budget Calculator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </head>
 <body>
-  <h1>Budget Calculator</h1>
+  <h1>🧠 Budget Buddy</h1>
 
   <div class="container">
-  <canvas id="budgetChart" width="300" height="300"></canvas>
+    <label>💼 Monthly Income:<br><input type="number" id="income" placeholder="e.g. 1000"></label>
 
-    <label>Monthly Income: $<input type="number" id="income"></label>
+    <h3>💸 Expenses</h3>
+    <label>🏠 Rent:<br><input type="number" id="rent" placeholder="e.g. 400"></label>
+    <label>🍔 Groceries:<br><input type="number" id="groceries" placeholder="e.g. 150"></label>
+    <label>🔌 Utilities:<br><input type="number" id="utilities" placeholder="e.g. 75"></label>
+    <label>🎮 Other:<br><input type="number" id="other" placeholder="e.g. 50"></label>
 
-    <h3>Expenses</h3>
-    <label>Rent: $<input type="number" id="rent"></label>
-    <label>Groceries: $<input type="number" id="groceries"></label>
-    <label>Utilities: $<input type="number" id="utilities"></label>
-    <label>Other: $<input type="number" id="other"></label>
-
-    <button onclick="calculateBudget()">Calculate</button>
+    <button onclick="calculateBudget()">🎯 Calculate</button>
+    <button id="reset-btn">🔄 Reset</button>
 
     <div id="results">
-      <p>Total Expenses: $<span id="total-expenses">0</span></p>
-      <p>Remaining Balance: $<span id="balance">0</span></p>
+      <p>📊 Total Expenses: $<span id="total-expenses">0</span></p>
+      <p>💰 Remaining Balance: $<span id="balance">0</span></p>
     </div>
+    <canvas id="budgetChart" width="300" height="300"></canvas>
+
+   
+
+   
   </div>
 
   <script src="script.js"></script>
 </body>
+
 </html>
